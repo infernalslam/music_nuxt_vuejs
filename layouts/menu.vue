@@ -3,16 +3,22 @@
     <div class="navbar-container">
       <el-row>
         <el-col :span="24">
-          <el-menu default-active="2" mode="vertical" class="el-menu-vertical-demo">
+          <img class="img-logo" src="~assets/img/sellsuki.png" />
+          <el-menu  mode="vertical" class="el-menu-vertical-demo">
             <el-submenu index="1">
-              <template slot="title">เมนูที่ 1</template>
-              <el-menu-item-group title="เมนูย่อยของเมนูที่ 1">
-                <el-menu-item index="1-1">เมนูย่อยของเมนูที่ 1-1</el-menu-item>
-                <el-menu-item index="1-2">เมนูย่อยของเมนูที่ 1-2</el-menu-item>
+              <template slot="title">Working</template>
+              <el-menu-item-group title="รายการ">
+                <el-menu-item index="1-1">งานที่กำลังทำอยู่</el-menu-item>
+                <el-menu-item index="1-2">งานที่ทำเสร็จเเล้ว</el-menu-item>
+                <el-menu-item index="1-3">Graph Working Flow</el-menu-item>
               </el-menu-item-group>
             </el-submenu>
-            <el-menu-item index="2">เมนูที่ 2</el-menu-item>
-            <el-menu-item index="3">เมนูที่ 3</el-menu-item>
+            <nuxt-link to="/list" class="under-title">
+              <el-menu-item index="2">List Working</el-menu-item>
+            </nuxt-link>
+            <nuxt-link to="/order" class="under-title">
+              <el-menu-item index="3">Order Working</el-menu-item>
+            </nuxt-link>
           </el-menu>
         </el-col>
       </el-row>
@@ -43,9 +49,13 @@ export default {
     overflow-y: scroll;
     padding: 10px 40px;
   }
-  .languagebar {
-    position: absolute;
-    bottom: 0px;
-    padding: 10px;
+  .img-logo {
+    width: 60%;
+    padding-top: 5%;
+    text-align: center;
+    margin-left: 15%;
+  }
+  .under-title {
+    text-decoration: none;
   }
 </style>
