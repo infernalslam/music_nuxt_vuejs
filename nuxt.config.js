@@ -13,6 +13,14 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+  plugins: [
+    { src: '~plugins/element-ui.js' }
+  ],
+  css: [
+    'element-ui/lib/theme-default/index.css',
+    'font-awesome/css/font-awesome.min.css',
+    '~/assets/main.css'
+  ],
   /*
   ** Customize the progress-bar color
   */
