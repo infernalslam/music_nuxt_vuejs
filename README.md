@@ -1,4 +1,4 @@
-# music
+# working book by nuxt/vuejs
 
 > Nuxt.js project
 
