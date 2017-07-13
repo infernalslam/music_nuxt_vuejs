@@ -1,12 +1,15 @@
 <template>
   <div>
-    hello wolrd
+    loading
   </div>
 </template>
 
 <script>
 
 export default {
-  layout: 'menu'
+  layout: 'menu',
+  mounted () {
+    this.$router.push({name: `list`})
+  }
 }
 </script>
